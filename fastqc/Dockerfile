@@ -12,5 +12,3 @@ RUN curl -SL http://www.bioinformatics.babraham.ac.uk/projects/fastqc/fastqc_$FA
     && unzip fastqc.zip \
     && chmod 755 /FastQC/fastqc \
     && rm fastqc.zip
-
-ENTRYPOINT FastQC/fastqc
