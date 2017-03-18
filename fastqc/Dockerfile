@@ -1,3 +1,5 @@
+# http://www.bioinformatics.babraham.ac.uk/projects/fastqc/
+
 FROM java:8u111-jre
 
 # Install dependencies

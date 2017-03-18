@@ -1,3 +1,6 @@
+# http://www.htslib.org/
+# Install steps based on https://github.com/samtools/samtools/blob/develop/INSTALL
+
 FROM buildpack-deps:jessie
 
 # Install samtools
