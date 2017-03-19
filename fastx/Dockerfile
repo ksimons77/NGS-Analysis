@@ -23,7 +23,7 @@ RUN curl -SL https://github.com/agordon/fastx_toolkit/releases/download/$FASTX_V
     && ./configure \
     && make \
     && make install \
-    && cd /
+    && cd / \
     && ldconfig
 
 ENTRYPOINT ["fastx_uncollapser"]
