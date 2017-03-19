@@ -1,7 +1,23 @@
 # http://hannonlab.cshl.edu/fastx_toolkit/index.html
 # Install steps based on http://hannonlab.cshl.edu/fastx_toolkit/install_ubuntu.txt
 
-FROM buildpack-deps:jessie
+#FROM buildpack-deps:jessie
+
+FROM debian:jessie
+
+# Install dependencies
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends \
+    autoconf \
+        bzip2 \
+        ca-certificates \
+        curl \
+        g++ \
+        gcc \
+        libc6-dev \
+        make \
+        pkg-config \
+    && rm -rf /var/lib/apt/lists/*
 
 # Install libgtextutils
 ENV LIBGTEXTUTILS_VERSION 0.6.1
