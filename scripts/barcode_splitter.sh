@@ -124,7 +124,5 @@ for barcode in `ls $barcodes/* | sort -r`; do
     unmatchedFile="${prefix}unmatched${suffix}"
     if [ $useUnmatched -eq 1 ]; then
         fastqInput="$unmatchedFile"
-    else
-        execute rm $unmatchedFile
     fi
 done
