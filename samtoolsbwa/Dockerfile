@@ -21,6 +21,7 @@ RUN apt-get update \
         libncurses5-dev \
         make \
         zlib1g-dev \
+        parallel \
 
     && rm -rf /var/lib/apt/lists/*
 
